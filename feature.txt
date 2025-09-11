@@ -1,2 +1,7 @@
-JAI Mahadev
-jai ganesh
+<<<<<<< Updated upstream
+JAI Mahadev jai ganesh
+=======
+HAR-HAR MAHADEV.
+
+
+>>>>>>> Stashed changes
