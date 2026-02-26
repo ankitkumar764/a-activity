@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Height vs Padding Responsive Demo</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    display:flex;
+    gap:20px;
+    padding:20px;
+}
+
+/* ❌ Fixed Height Box */
+.height-box{
+    border:2px solid red;
+    width:50%;
+    height:60px;                /* FIXED HEIGHT - Problem */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#ffe5e5;
+}
+
+/* ✅ Padding Box */
+.padding-box{
+    border:2px solid green;
+    width:50%;
+    padding:15px 20px;          /* PADDING - Responsive */
+    background:#e8ffe5;
+}
+
+TEXT ko bada kar ke difference dekhna
+.box-text{
+    font-size:22px;
+}
+
+/* 👇 Jab screen chhoti hogi */
+@media(max-width:500px){
+    .box-text{
+        font-size:50px;        /* Text bda ho gaya */
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="height-box">
+        <p class="box-text">HEIGHT BOX</p>
+    </div>
+
+    <div class="padding-box">
+        <p class="box-text">PADDING BOX</p>
+    </div>
+
+</div>
+
+</body>
+</html>
